@@ -1,7 +1,14 @@
 def nyc_pigeon_organizer(data)
+  organized_hash = {}
   # write your code here!
-  data.each do |key,value|
-    category
+  data.each do |category,values|
+    category.each do |value,names|
+      names.each do |name|
+        if !organized_hash.include?(name)
+          organized_hash << {name,}
+        end
+      end
+    end
   end
 end
 
