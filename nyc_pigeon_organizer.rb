@@ -3,7 +3,7 @@ require 'pry'
 def nyc_pigeon_organizer(data)
 
   #this block of code returns an organized_hash of all the pigeon names as keys
-  #pointing to empty Color, Gender, and Lives hashes
+  #pointing to empty Color, Gender, and Lives array
   organized_hash = {}
   data.each do |category,values|
     values.each do |value,names|
