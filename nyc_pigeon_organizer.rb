@@ -2,9 +2,7 @@ require 'pry'
 
 def nyc_pigeon_organizer(data)
   organized_hash = {}
-  # write your code here!
   data.each do |category,values|
-    binding.pry 
     category.each do |value,names|
       names.each do |name|
         if !organized_hash.include?(name)
