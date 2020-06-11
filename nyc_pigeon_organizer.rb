@@ -23,7 +23,6 @@ def nyc_pigeon_organizer(data)
       data.each do |category,values|
         values.each do |value,names|
           names.each do |name|
-                binding.pry 
             if name == pigeon
                 organized_hash[pigeon][attribute][specifications] << name
                 binding.pry
