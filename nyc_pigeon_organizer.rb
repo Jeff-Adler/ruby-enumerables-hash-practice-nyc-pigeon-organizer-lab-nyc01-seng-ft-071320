@@ -24,7 +24,7 @@ def nyc_pigeon_organizer(data)
       data.each do |category,values|
         values.each do |value,names|
           names.each do |name|
-            if name == pigeon && attribute.to_s == value.to_s
+            if name == pigeon
                 organized_hash[pigeon][attribute] << value.to_s
                 binding.pry
             end
