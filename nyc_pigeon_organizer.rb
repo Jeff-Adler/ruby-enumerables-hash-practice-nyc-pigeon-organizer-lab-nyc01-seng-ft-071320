@@ -25,6 +25,7 @@ def nyc_pigeon_organizer(data)
           names.each do |name|
             if name == pigeon
                 organized_hash[pigeon][attribute] << name
+                binding.pry
             end
           end
         end
