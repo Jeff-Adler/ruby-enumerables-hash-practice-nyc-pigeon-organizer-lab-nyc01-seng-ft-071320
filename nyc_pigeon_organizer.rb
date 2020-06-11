@@ -20,19 +20,20 @@ def nyc_pigeon_organizer(data)
   #this gets you to the level of color, gender, lives
   organized_hash.each do |pigeon, attributes|
     attributes.each do |attribute,specifications|
+      #empty space
       data.each do |category,values|
         values.each do |value,names|
           names.each do |name|
-            if name == pigeon
+            if name == pigeon && attribute == value
                 organized_hash[pigeon][attribute] << value.to_s
+                binding.pry
             end
           end
         end
       end
 
     end
-  end
-binding.pry 
+
 organized_hash
 end
 
