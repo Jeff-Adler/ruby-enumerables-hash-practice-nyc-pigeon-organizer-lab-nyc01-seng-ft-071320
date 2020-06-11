@@ -34,6 +34,7 @@ def nyc_pigeon_organizer(data)
     end
   end
 
+organized_hash
 end
 
 #for each element in the top-level, if there is another layer of nesting, call that layer of nesting.
