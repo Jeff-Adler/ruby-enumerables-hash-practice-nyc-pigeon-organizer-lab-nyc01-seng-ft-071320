@@ -1,3 +1,5 @@
+require 'pry'
+
 def nyc_pigeon_organizer(data)
   organized_hash = {}
   # write your code here!
@@ -6,6 +8,7 @@ def nyc_pigeon_organizer(data)
       names.each do |name|
         if !organized_hash.include?(name)
           organized_hash[name] = {}
+          binding.pry
         end
       end
     end
