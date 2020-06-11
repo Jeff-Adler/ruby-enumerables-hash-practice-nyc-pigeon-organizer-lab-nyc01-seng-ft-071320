@@ -3,7 +3,7 @@ require 'pry'
 def nyc_pigeon_organizer(data)
   organized_hash = {}
   data.each do |category,values|
-    category.each do |value,names|
+    values.each do |value,names|
       names.each do |name|
         if !organized_hash.include?(name)
           organized_hash[name] = {}
