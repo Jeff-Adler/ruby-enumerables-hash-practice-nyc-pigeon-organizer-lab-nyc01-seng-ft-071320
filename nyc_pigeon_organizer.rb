@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
     category.each do |value,names|
       names.each do |name|
         if !organized_hash.include?(name)
-          organized_hash << {name,}
+          organized_hash[name] = ""
         end
       end
     end
