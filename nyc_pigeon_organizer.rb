@@ -20,7 +20,7 @@ def nyc_pigeon_organizer(data)
   #this gets you to the level of color, gender, lives
   organized_hash.each do |pigeon, attributes|
     attributes.each do |attribute,specifications|
-
+binding.pry 
       data.each do |category,values|
         values.each do |value,names|
           names.each do |name|
@@ -33,7 +33,7 @@ def nyc_pigeon_organizer(data)
 
     end
   end
-binding.pry 
+
 organized_hash
 end
 
