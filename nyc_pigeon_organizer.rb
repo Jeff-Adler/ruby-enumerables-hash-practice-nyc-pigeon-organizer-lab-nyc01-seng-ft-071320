@@ -11,6 +11,7 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
+  binding.pry 
 end
 
 #for each element in the top-level, if there is another layer of nesting, call that layer of nesting.
